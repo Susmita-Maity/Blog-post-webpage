@@ -1,0 +1,205 @@
+/* body */
+.body{
+    background-color: rgb(164, 155, 180);
+}
+.emoji{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: movement 1s linear 2s infinite alternate;
+}
+/* Key frame */
+@keyframes movement{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 1500px;
+    }
+    50%{
+        top: 2200px;
+        left: 2200px;
+    }
+    100%{
+        top: 2200px;
+        left: 0px;
+    }
+    
+}
+h1{
+    text-decoration:underline;
+    text-decoration-color: cadetblue;
+    text-align: center;
+    border: 2px solid blue;
+    box-shadow: 10px 10px burlywood,-10px -10px rgb(219, 184, 131);
+    text-shadow: 5px 5px 5px white;
+}
+
+h3{   
+    text-decoration: underline;
+    text-decoration-color: darkcyan;
+    text-shadow:5px 5px 5px  white;
+}
+
+nav{
+
+    display: flex;
+    justify-content:space-between;
+    background-color: #f3ecdbd8;
+}
+nav > ul{
+    display: flex;
+}
+nav > ul > li{
+    list-style-type: none;
+    margin: 20px;
+    padding: 20px;
+   
+}
+/* navigation list */
+
+#navlist-1:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+    
+}
+#navlist-2:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-3:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-4:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-5:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-6:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-7:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+#navlist-8:hover{
+    background-color: cadetblue;
+    transform: rotate(10deg);
+}
+.main{
+    background-image: url("./image.jpg");
+    opacity:5 ;
+}
+
+.box{
+transition: all 1s linear 1s;
+
+}
+.box:hover{
+    background-color: cadetblue;
+    
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap ;
+    flex-flow: row wrap;
+}
+article{
+ border: 1px solid black;
+ background-color: rgb(181, 232, 232);
+ margin: 40px;
+ padding: 40px;
+ width: 700px;
+ height: 1850px;
+ flex-basis: 200px;
+ 
+}
+article:nth-last-of-type(2)
+{
+  flex-shrink: 2;
+}
+
+.container{
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+}
+/* Media queries */
+@media(max-width:500px){
+    .container-1{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(min-width:800px){
+    .body{
+        background-color: rgb(228, 189, 228);
+    }
+    
+}
+input{
+background-color: rgb(211, 235, 137);
+
+}
+/* ID */
+#submit{
+   
+    color: rgb(33, 33, 183);
+    background-color: rgb(247, 246, 224);
+    text-shadow: 5px 5px 5px rgb(202, 202, 209);
+}
+#submit:hover{
+    background-color: rgb(239, 145, 21);
+    color: #081b29;
+    box-shadow: 0 0 20px rgb(41, 31, 1);
+}
+/* footer */
+.icons a{
+    background-color: rgb(0, 7, 7);
+    color: rgb(249, 126, 18);
+    margin-left: 180px;
+    padding: 10px; 
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px white , -2px -2px 5px white; 
+    
+}  
+.icons a:hover{
+    background-color: #0ef;
+    color: #081b29;
+    box-shadow: 0 0 20px #0ef;
+}  
+
+
+
+
+footer h5{
+    text-align: center;
+    text-shadow: 5px 5px 5px white;
+}
+.boxxx{
+    position: relative;
+    top: 0px;
+    left: 0px;
+    animation: bottomMovement 1s linear 2s infinite alternate;
+}
+@keyframes bottomMovement{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 1500px;
+    }
+    
+}
